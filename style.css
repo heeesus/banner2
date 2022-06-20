@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+    a.banner {
+        display: block;
+        background: #ccc;
+        width: 564px;
+        height: 564px;
+        position: relative;
+        font-family: 'Noto Sans KR', sans-serif;
+        background-image: 
+          url(),
+          url('images/back.jpg');
+        background-position: 0 0, right top;
+        background-size: contain, cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .text {
+        position: absolute;
+        top: 85px;
+        left: 85px;
+        animation-name: text;
+        animation-duration: 8s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+      }
+      @keyframes text {
+        0% { 
+          top: 600px;
+        }
+        80% {}
+        100% {}
+      }
+    
+
